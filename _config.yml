@@ -1,12 +1,19 @@
-title: "SpaceHub Global"
-description: "Technology, digital marketing, IT, software, virtual numbers and practical digital guides."
-url: "https://spacehubglobal.netlify.app"
+
+title: SpaceHub Global
+
+description: >-
+  Practical insights about technology, digital marketing,
+  IT, software, cybersecurity, AI and digital tools, etc.
+
+url: https://spacehubglobal.github.io
+
 baseurl: ""
+
 lang: en
+
 markdown: kramdown
-permalink: pretty
-plugins: []
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed

@@ -1,12 +1,9 @@
 ---
 layout: article
 title: "Número Virtual Temporário: Quando Usar, Como Escolher e O Que Considerar"
-description: "Entenda a diferença entre número virtual temporário e número secundário, quando usar cada opção, como funciona a verificação por SMS e quais fatores avaliar antes de escolher um serviço."
-lang: pt-BR
+description: "Guia prático sobre números virtuais temporários, SMS de verificação, compatibilidade, privacidade e critérios para escolher uma solução adequada."
 date: 2026-09-22
-categories:
-  - Virtual Numbers
-  - SMS
+lang: pt-BR
 permalink: /blog/numero-virtual-temporario/
 ---
 

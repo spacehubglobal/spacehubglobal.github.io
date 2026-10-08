@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ page.description }}"><meta name="robots" content="index,follow">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="article"><meta property="og:title" content="{{ page.title }} | {{ site.title }}"><meta property="og:description" content="{{ page.description }}"><meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<style>
+body{margin:0;background:#f6f8fc;color:#172033;font:16px/1.75 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}.wrap{width:min(1080px,calc(100% - 34px));margin:auto}.top{background:#fff;border-bottom:1px solid #e3e8f0;padding:14px 0;position:sticky;top:0;z-index:10}.nav{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:850;color:#1262e8;text-decoration:none}.actions{display:flex;gap:12px;align-items:center}.home{font-weight:700;color:#344054;text-decoration:none}.lang{font-size:.85rem;text-decoration:none;color:#1262e8;font-weight:800}.article{padding:45px 0 80px}.content{background:#fff;border:1px solid #e3e8f0;border-radius:18px;padding:clamp(22px,5vw,55px)}a{color:#1262e8}img{max-width:100%;height:auto}table{max-width:100%;border-collapse:collapse}th,td{padding:10px;border:1px solid #ddd;text-align:left}
+</style></head><body>
+<header class="top"><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}">SpaceHub Global</a><div class="actions"><a class="home" href="{% if page.lang == 'pt-BR' %}{{ '/pt-br/' | relative_url }}{% elsif page.lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'pt-BR' %}Início{% elsif page.lang == 'es' %}Inicio{% else %}Home{% endif %}</a><a class="lang" href="{{ '/' | relative_url }}">EN</a><a class="lang" href="{{ '/es/' | relative_url }}">ES</a><a class="lang" href="{{ '/pt-br/' | relative_url }}">PT</a></div></div></header>
+<main class="article"><div class="wrap"><article class="content">{{ content }}</article></div></main>
+</body></html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }} | {{ site.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<link rel="alternate" hreflang="en" href="{{ site.url }}/">
+<link rel="alternate" hreflang="es" href="{{ site.url }}/es/">
+<link rel="alternate" hreflang="pt-BR" href="{{ site.url }}/pt-br/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<style>
+:root{--ink:#172033;--muted:#627084;--blue:#1262e8;--blue2:#0b3d8f;--bg:#f5f7fb;--card:#fff;--line:#e3e8f0;--soft:#edf5ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 34px));margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font-size:1.25rem;font-weight:850;letter-spacing:-.03em}.brand span{color:var(--blue)}.links{display:flex;gap:22px;align-items:center}.links a{font-size:.94rem;font-weight:650;color:#3d4a5d}.langs{display:flex;gap:6px}.lang{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 9px;font-weight:700;color:#4a5668}.lang.active{background:var(--blue);border-color:var(--blue);color:#fff}
+.hero{background:linear-gradient(135deg,var(--blue2),var(--blue));color:#fff;padding:90px 0}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:#dce9ff}h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.03;letter-spacing:-.055em;margin:14px 0 22px;max-width:850px}.hero p{font-size:1.16rem;max-width:700px;color:#e5edff}.hero-card{background:#ffffff14;border:1px solid #ffffff30;border-radius:22px;padding:28px}.hero-card ul{padding-left:20px;color:#e4edff}
+.section{padding:70px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.035em;margin:0 0 8px}.muted{color:var(--muted)}.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}.tag{display:inline-block;background:var(--soft);color:var(--blue);border-radius:999px;padding:5px 10px;font-size:.76rem;font-weight:800}.card h3{font-size:1.35rem;line-height:1.25;margin:15px 0 10px}.date{font-size:.82rem;color:var(--muted)}.read{display:inline-block;margin-top:15px;background:var(--blue);color:#fff;border-radius:9px;padding:10px 14px;font-weight:750}.empty{background:#fff;border:1px dashed var(--line);border-radius:18px;padding:30px;color:var(--muted)}.topics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.topic{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;font-weight:750}.topic small{display:block;color:var(--muted);font-weight:400;margin-top:5px}.about{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:40px}footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.9rem;background:#fff}
+@media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.posts{grid-template-columns:1fr 1fr}.topics{grid-template-columns:1fr 1fr}.links{display:none}}@media(max-width:520px){.posts,.topics{grid-template-columns:1fr}.hero{padding:65px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}">SpaceHub <span>Global</span></a><nav class="links"><a href="#topics">{{ page.i18n.nav_topics }}</a><a href="#latest">{{ page.i18n.nav_latest }}</a><a href="#about">{{ page.i18n.nav_about }}</a></nav><div class="langs"><a class="lang{% if page.lang == 'en' %} active{% endif %}" href="{{ '/' | relative_url }}">EN</a><a class="lang{% if page.lang == 'es' %} active{% endif %}" href="{{ '/es/' | relative_url }}">ES</a><a class="lang{% if page.lang == 'pt-BR' %} active{% endif %}" href="{{ '/pt-br/' | relative_url }}">PT</a></div></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">SpaceHub Global</div><h1>{{ page.i18n.hero_title }}</h1><p>{{ page.i18n.hero_text }}</p></div><div class="hero-card"><strong>{{ page.i18n.hero_card_title }}</strong><ul><li>{{ page.i18n.hero_1 }}</li><li>{{ page.i18n.hero_2 }}</li><li>{{ page.i18n.hero_3 }}</li><li>{{ page.i18n.hero_4 }}</li></ul></div></div></section>
+<section class="section" id="latest"><div class="wrap"><div class="section-head"><div><h2>{{ page.i18n.latest_title }}</h2><div class="muted">{{ page.i18n.latest_sub }}</div></div></div>
+<div class="posts">
+{% assign language_posts = site.posts | where: "lang", page.lang %}
+{% if language_posts.size > 0 %}
+{% for post in language_posts limit: 6 %}
+<article class="card"><span class="tag">{{ post.category | default: page.i18n.default_category }}</span><div class="date">{{ post.date | date: "%d %B %Y" }}</div><h3>{{ post.title }}</h3><p class="muted">{{ post.description }}</p><a class="read" href="{{ post.url | relative_url }}">{{ page.i18n.read_article }} →</a></article>
+{% endfor %}
+{% else %}<div class="empty">{{ page.i18n.empty_posts }}</div>{% endif %}
+</div></div></section>
+<section class="section" id="topics"><div class="wrap"><div class="section-head"><div><h2>{{ page.i18n.topics_title }}</h2><div class="muted">{{ page.i18n.topics_sub }}</div></div></div><div class="topics"><div class="topic">{{ page.i18n.t1 }}<small>{{ page.i18n.t1s }}</small></div><div class="topic">{{ page.i18n.t2 }}<small>{{ page.i18n.t2s }}</small></div><div class="topic">{{ page.i18n.t3 }}<small>{{ page.i18n.t3s }}</small></div><div class="topic">{{ page.i18n.t4 }}<small>{{ page.i18n.t4s }}</small></div><div class="topic">{{ page.i18n.t5 }}<small>{{ page.i18n.t5s }}</small></div><div class="topic">{{ page.i18n.t6 }}<small>{{ page.i18n.t6s }}</small></div><div class="topic">{{ page.i18n.t7 }}<small>{{ page.i18n.t7s }}</small></div><div class="topic">{{ page.i18n.t8 }}<small>{{ page.i18n.t8s }}</small></div></div></div></section>
+<section class="section" id="about"><div class="wrap"><div class="about"><div><h2>{{ page.i18n.about_title }}</h2><p class="muted">{{ page.i18n.about_text }}</p></div><div><h3>{{ page.i18n.about_focus }}</h3><p class="muted">{{ page.i18n.about_focus_text }}</p></div></div></div></section>
+</main><footer><div class="wrap">© 2026 SpaceHub Global. {{ page.i18n.footer }}</div></footer>
+</body></html>

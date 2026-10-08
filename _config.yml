@@ -1,0 +1,11 @@
+title: SpaceHub Global
+description: >-
+  Practical insights about technology, digital marketing, IT, software,
+  cybersecurity, AI and digital tools.
+url: https://spacehubglobal.github.io
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: /blog/:title/
+plugins:
+  - jekyll-feed

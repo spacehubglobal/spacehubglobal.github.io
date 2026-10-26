@@ -15,6 +15,7 @@
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
 <style>
 :root{--ink:#172033;--muted:#627084;--blue:#1262e8;--blue2:#0b3d8f;--bg:#f5f7fb;--card:#fff;--line:#e3e8f0;--soft:#edf5ff}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 34px));margin:auto}
@@ -25,7 +26,7 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}"><!-- SpaceHub <span>Global</span> --> <img src="/assets/img/SpaceHub-Global-Logo.png" alt="SpaceHub Global" height="75px"></a><nav class="links"><a href="#topics">{{ page.i18n.nav_topics }}</a><a href="#latest">{{ page.i18n.nav_latest }}</a><a href="#about">{{ page.i18n.nav_about }}</a></nav><div class="langs"><a class="lang{% if page.lang == 'en' %} active{% endif %}" href="{{ '/' | relative_url }}">EN</a><a class="lang{% if page.lang == 'es' %} active{% endif %}" href="{{ '/es/' | relative_url }}">ES</a><a class="lang{% if page.lang == 'pt-BR' %} active{% endif %}" href="{{ '/pt-br/' | relative_url }}">PT</a></div></div></header>
+<header><div class="wrap nav"><a class="brand" href="{{ '/' | relative_url }}"><!-- SpaceHub <span>Global</span> --> <img src="/assets/img/SpaceHub-Global-Logo-225-75.png" height="75px" alt="SpaceHub Global Logo"></a><nav class="links"><a href="#topics">{{ page.i18n.nav_topics }}</a><a href="#latest">{{ page.i18n.nav_latest }}</a><a href="#about">{{ page.i18n.nav_about }}</a></nav><div class="langs"><a class="lang{% if page.lang == 'en' %} active{% endif %}" href="{{ '/' | relative_url }}">EN</a><a class="lang{% if page.lang == 'es' %} active{% endif %}" href="{{ '/es/' | relative_url }}">ES</a><a class="lang{% if page.lang == 'pt-BR' %} active{% endif %}" href="{{ '/pt-br/' | relative_url }}">PT</a></div></div></header>
 <main>
 <section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">SpaceHub Global</div><h1>{{ page.i18n.hero_title }}</h1><p>{{ page.i18n.hero_text }}</p></div><div class="hero-card"><strong>{{ page.i18n.hero_card_title }}</strong><ul><li>{{ page.i18n.hero_1 }}</li><li>{{ page.i18n.hero_2 }}</li><li>{{ page.i18n.hero_3 }}</li><li>{{ page.i18n.hero_4 }}</li></ul></div></div></section>
 <section class="section" id="latest"><div class="wrap"><div class="section-head"><div><h2>{{ page.i18n.latest_title }}</h2><div class="muted">{{ page.i18n.latest_sub }}</div></div></div>
@@ -39,5 +40,20 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 </div></div></section>
 <section class="section" id="topics"><div class="wrap"><div class="section-head"><div><h2>{{ page.i18n.topics_title }}</h2><div class="muted">{{ page.i18n.topics_sub }}</div></div></div><div class="topics"><div class="topic">{{ page.i18n.t1 }}<small>{{ page.i18n.t1s }}</small></div><div class="topic">{{ page.i18n.t2 }}<small>{{ page.i18n.t2s }}</small></div><div class="topic">{{ page.i18n.t3 }}<small>{{ page.i18n.t3s }}</small></div><div class="topic">{{ page.i18n.t4 }}<small>{{ page.i18n.t4s }}</small></div><div class="topic">{{ page.i18n.t5 }}<small>{{ page.i18n.t5s }}</small></div><div class="topic">{{ page.i18n.t6 }}<small>{{ page.i18n.t6s }}</small></div><div class="topic">{{ page.i18n.t7 }}<small>{{ page.i18n.t7s }}</small></div><div class="topic">{{ page.i18n.t8 }}<small>{{ page.i18n.t8s }}</small></div></div></div></section>
 <section class="section" id="about"><div class="wrap"><div class="about"><div><h2>{{ page.i18n.about_title }}</h2><p class="muted">{{ page.i18n.about_text }}</p></div><div><h3>{{ page.i18n.about_focus }}</h3><p class="muted">{{ page.i18n.about_focus_text }}</p></div></div></div></section>
-</main><footer><div class="wrap">© 2026 SpaceHub Global. {{ page.i18n.footer }}</div></footer>
+</main><footer><div class="wrap">&copy; 2026 SpaceHub Global. {{ page.i18n.footer }}</div>
+<div class="footer-social">
+  <span>Follow us:</span>
+  <a href="https://x.com/spacehubglobal" target="_blank" rel="me noopener" aria-label="X (Twitter)" title="X (Twitter)">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+  <a href="https://bsky.app/profile/spacehubglobal.bsky.social" target="_blank" rel="me noopener" aria-label="Bluesky" title="Bluesky">
+    <i class="fa-brands fa-bluesky"></i>
+  </a>
+  <a href="https://www.instagram.com/spacehubglobalofficial" target="_blank" rel="me noopener" aria-label="Instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://mastodon.social/@spacehubglobal" target="_blank" rel="me noopener" aria-label="Mastodon" title="Mastodon">
+    <i class="fa-brands fa-mastodon"></i>
+  </a>
+</div></footer>
 </body></html>

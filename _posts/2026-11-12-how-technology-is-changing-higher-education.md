@@ -1,13 +1,4 @@
 ---
-layout: article
-title: "How Technology Is Changing Higher Education and Student Research"
-description: "Explore how digital tools, online learning and AI are changing the way students research courses, develop skills and plan higher education."
-date: 2026-11-12
-lang: en
-category: "Education and Technology"
-permalink: /en/blog/technology-changing-higher-education-student-research/
----
----
 
 layout: article
 title: "How Technology Is Changing Higher Education and Student Research"

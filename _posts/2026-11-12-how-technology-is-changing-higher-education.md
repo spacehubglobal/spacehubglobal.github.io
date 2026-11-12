@@ -8,7 +8,7 @@ lang: en
 category: "Education and Technology"
 permalink: /en/blog/technology-changing-higher-education-student-research/
 ---
-![Students using laptops and digital learning tools to research higher education opportunities in a modern study environment.](assets/img/technology-higher-education-student-research.jpg.png)
+![Students using laptops and digital learning tools to research higher education opportunities in a modern study environment.](/assets/img/technology-higher-education-student-research.jpg.png)
 # How Technology Is Changing Higher Education and Student Research
 
 A student researching a university course today has access to more information than previous generations could easily find. Course details, admission requirements, lectures, research papers and even virtual campus tours are available online. A laptop or smartphone can take someone from a basic question about a degree to a detailed comparison of universities in different countries.
